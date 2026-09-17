@@ -19,12 +19,11 @@ namespace WakaTime {
     public const string DEBUG_PREF = "WakaTime/Debug";
     public const string WAKATIME_PROJECT_FILE = ".wakatime-project";
 
-    public static string ProjectName { get; private set;}
-
-    private static string _apiKey = "6bb4b5e0-2ea4-4eff-a7c0-2bca6bb11be4 ";
+    public static string ProjectName { get; private set; }
+        private static string _apiKey = "6bb4b5e0-2ea4-4eff-a7c0-2bca6bb11be4 ";
     private static string _apiUrl = "https://hackatime.hackclub.com/api/hackatime/v1/";
     private static bool _enabled = true;
-    private static bool _debug = true;
+    private static bool _debug = false;
 
     private const string URL_PREFIX = "https://hackatime.hackclub.com/api/hackatime/v1/";
     private const int HEARTBEAT_COOLDOWN = 5;
@@ -131,7 +130,7 @@ namespace WakaTime {
         entity = file == string.Empty ? "Unsaved Scene" : file;
         type = "file";
         time = (float) DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
-        project = ProjectName;
+        project = "Sail-the-Seas";
         plugin = "unity-hackatime";
         branch = "main";
         language = "unity";
@@ -200,7 +199,7 @@ namespace WakaTime {
           }
         }
         else {
-          if (_debug) Debug.Log("<HackaTime> Sent heartbeat!");
+          Debug.Log("<HackaTime> Sent heartbeat!");
           _lastHeartbeat = response.data;
         }
       }
