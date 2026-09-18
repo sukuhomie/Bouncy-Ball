@@ -1,12 +1,12 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PipeSpawnScript : MonoBehaviour
+public class PipeSpawnScriptMenu : MonoBehaviour
 {
-    public GameObject Pipes;
+    public GameObject Pipe;
 
     // float is for all numbers counting non rounds, decimals work when you put f after the decimal
-    public float spawnRate = 5;
+    public float spawnRate = 0.5f;
     private float timer = 0;
     public float heightOffset = 15;
 
@@ -19,10 +19,11 @@ public class PipeSpawnScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timer < spawnRate) 
+        if (timer < spawnRate)
         {
             timer = timer + Time.deltaTime;
-        } else
+        }
+        else
         {
             spawnPipe();
             timer = 0;
@@ -34,6 +35,6 @@ public class PipeSpawnScript : MonoBehaviour
         float lowestPoint = transform.position.y - heightOffset;
         float highestPoint = transform.position.y + heightOffset;
 
-        Instantiate(Pipes, new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint)), transform.rotation);
+        Instantiate(Pipe, new Vector3(transform.position.x, transform.position.y), transform.rotation);
     }
 }
