@@ -5,7 +5,7 @@ public class PipeSpawnScript : MonoBehaviour
 {
     public GameObject Pipes;
 
-    // float is for all numbers counting non rounds
+    // float is for all numbers counting non rounds, decimals work when you put f after the decimal
     public float spawnRate = 5;
     private float timer = 0;
     public float heightOffset = 15;
