@@ -2,25 +2,24 @@ using UnityEngine;
 
 public class MovePipeScript : MonoBehaviour
 {
-
     public float moveSpeed = 5;
     public float deadZone = -45;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public LogicScript logic;
+
     void Start()
     {
-        
+        logic = GameObject.FindGameObjectWithTag("Logic")
+            .GetComponent<LogicScript>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
-        
+        transform.position += Vector3.left * logic.moveSpeed * Time.deltaTime;
+
         if (transform.position.x < deadZone)
         {
-            Debug.Log("Pipe Deleted");
             Destroy(gameObject);
         }
-    }   
+    }
 }

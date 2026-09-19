@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class flyinity : MonoBehaviour
 {
@@ -40,8 +41,11 @@ public class flyinity : MonoBehaviour
             }
 
             myRigidBody.linearVelocity = Vector2.up * flapStrength;
+            GetComponent<Animator>().SetTrigger("trigger");
 
-            
+
+
+
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
