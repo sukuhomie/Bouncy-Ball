@@ -22,6 +22,11 @@ public class LogicScript : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     public void gameOver()
     {
         gameOverScreen.SetActive(true);

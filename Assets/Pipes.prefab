@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6556201923328658018}
   - component: {fileID: 2913639042791869713}
   - component: {fileID: 5886240626637506574}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Top Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 7565337383505946526}
   - component: {fileID: 4246019304508331224}
   - component: {fileID: 5017410584639112713}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7949957744231826112}
   - component: {fileID: 182591077363726547}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Pipes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,7 +278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94154968d37e47145840641c66dd6b43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePipeScript
-  moveSpeed: 5
+  moveSpeed: 10
   deadZone: -45
 --- !u!1 &4393472598825028025
 GameObject:
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 1509193472490447667}
   - component: {fileID: 4571670733551598128}
   - component: {fileID: 3640433888344996132}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bottom Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -307,7 +307,7 @@ Transform:
   m_GameObject: {fileID: 4393472598825028025}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.49, y: -10.38, z: 0}
+  m_LocalPosition: {x: -2.49, y: -13.4, z: 0}
   m_LocalScale: {x: 3, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
