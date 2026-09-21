@@ -6,7 +6,7 @@ TOTAL HOUR COUNT: around 13 hours (started before turning on hackatime).
 what i used to make different stuff:
 
 MUSIC:
-fl studio
+fl studio: ALL MUSIC IN THIS GAME IS MADE BY MYSELF
 ART ASSETS (yes thats amazing art ik ik):
 Paint.NET
 THE GAME:
