@@ -27,3 +27,9 @@ have i used AI?:
 
 
 it make looks like it doesnt take alot of time to make but i didnt know none about unity before starting to make this so the time is accurate
+
+
+
+LAST CHANGE:
+
+whats different than the flappy bird tutorial that is linked on the docs: the background particles, everything audio related, the animations, the sprites, SCALING DIFFICULTY (thats the main one), pause menu, main menu and prob some other stuff
