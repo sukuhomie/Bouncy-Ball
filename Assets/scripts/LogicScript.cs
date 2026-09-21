@@ -12,6 +12,8 @@ public class LogicScript : MonoBehaviour
     public int pipeCount;
     public Text PipeCountText;
     public float moveSpeed = 5;
+    public AudioSource GameMusic;
+    public AudioSource GameOverSFX;
     
 
     [ContextMenu("Increase Score")]
@@ -26,6 +28,7 @@ public class LogicScript : MonoBehaviour
     public void restartGame()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        GameMusic.pitch = 1;
     }
      
     public void QuitGame()
@@ -36,6 +39,9 @@ public class LogicScript : MonoBehaviour
     public void gameOver()
     {
         gameOverScreen.SetActive(true);
+        GameMusic.pitch = 0.8f;
+        GameOverSFX.Play();
+
     }
     
 }
